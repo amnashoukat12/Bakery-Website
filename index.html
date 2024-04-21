@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #98623c;
+      }
+       .bg-bakery {
+            background-color: #98623c;
+        }
+        .bg-bakery h2{
+            color: #fff;
+            margin-top: 80px;
+        }
+        .bg-bakery p{
+            color: #fff;
+        }
+        .first-section {
+            background-image: url('home.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white; 
+            padding: 235px 0; 
+             
+        }
+        .first-section h6{
+            font-size: 12px;
+            margin-right: 100px;
+        }
+        .order-btn {
+            background-color: #5F3719;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .order-btn:hover {
+            background-color: #fff;
+            color: #5F3719;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: bold;
+
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #A26332;
+            
+        }
+        .bg-navbar {
+            background-color:#5F3719;
+        }
+        .bg-contact{
+            background-color: #997950;
+        }
+        .bg-contact h2{
+            color: #fff;
+        }
+        .bg-product{
+            background-color: #7e481c;
+        }
+        .bg-product h2{
+            color: #fff;
+        }
+        .card-img-top {
+            height: 200px; 
+            object-fit: cover;
+        }
+        .card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-body {
+            position: relative;
+            z-index: 1;
+        }
+
+        .custom-btn{
+            width: 90px;
+            background-color: #5F3719;
+            color: white;
+            font-weight: bold;
+        }
+        .custom-btn:hover{
+             background-color: #fff;
+            color: #5F3719;
+        }
+                .bg-footer {
+            background-color: #5F3719;
+        }
+        .footer-text {
+            color: white; 
+        }
+            @media (max-width: 768px) {
+        .card {
+            margin-top: 20px; 
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tasty & Delicious</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="first-section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-7">
+                    <h1>Welcome to Our Bakery</h1>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</h6>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-bakery" id="about">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="about.png" class="img-fluid" alt="About Image">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-product" id="product">
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Our Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Donets</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="product2.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cookies</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="product3.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Cakes</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-contact" id="contact">
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn custom-btn btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-footer text-center py-4">
+        <div class="container text-white">
+            <p>&copy; 2024 Bakery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
